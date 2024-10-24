@@ -1,11 +1,13 @@
 package at.sefa.camera_project;
 
+import java.time.LocalDate;
+
 public class Foto {
     private String name;
-    private String date;
+    private LocalDate date;  
     private float size;
 
-    public Foto(String name, String date, float size) {
+    public Foto(String name, LocalDate date, float size) {
         this.name = name;
         this.date = date;
         this.size = size;
@@ -15,7 +17,7 @@ public class Foto {
         return this.name;
     }
 
-    public String getDate() {
+    public LocalDate getDate() { 
         return this.date;
     }
 
@@ -24,6 +26,7 @@ public class Foto {
     }
 
     public String getInfo() {
-        return "Picture: " + this.name + ", Date: " + this.date + ", Size: " + this.size + " MB";
+        return String.format("Picture: %s, Date: %s, Size: %.1f MB", 
+        name, date.toString(), size);  
     }
 }

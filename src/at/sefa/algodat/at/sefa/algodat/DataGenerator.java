@@ -1,5 +1,7 @@
 package at.sefa.algodat;
 
+import java.util.Random;
+
 public class DataGenerator {
 
     public static int[] generateDataArray(int size) {
@@ -10,5 +12,4 @@ public class DataGenerator {
         }
         return data;
     }
-
-    
+}

@@ -13,7 +13,7 @@ public class DataGenerator {
         return data;
     }
 
-    public static int[] generateDataArray(int size, int min, int max) {
+    public static int[] generateDataArray2(int size, int min, int max) {
         int[] data = new int[size];
         Random random = new Random();
         for (int i = 0; i < size; i++) {
@@ -22,4 +22,10 @@ public class DataGenerator {
         return data;
     }
 
+    public static void printArray(int[] data) {
+        for (int value : data) {
+            System.out.print(value + " ");
+        }
+        System.out.println();
+    }
 }

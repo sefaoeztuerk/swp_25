@@ -2,6 +2,7 @@ package at.sefa.sort;
 
 public class SelectionSort implements Sorter {
 
+    @Override
     public void sort(int[] array) {
         int n = array.length;
         for (int i = 0; i < n - 1; i++) {

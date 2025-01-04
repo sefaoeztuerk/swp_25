@@ -2,6 +2,7 @@ package at.sefa.sort;
 
 public class InsertionSort implements Sorter {
 
+    @Override
     public void sort(int[] array) {
         int n = array.length;
         for (int i = 1; i < n; i++) {

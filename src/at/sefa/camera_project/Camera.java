@@ -7,7 +7,6 @@ public class Camera {
     private int megapixels;
     private double weight;
     private String color;
-    private Lens lens;
     private SDCard sdCard;
     private String resolution;
 
@@ -17,10 +16,6 @@ public class Camera {
         this.weight = weight;
         this.color = color;
         this.resolution = "medium";
-    }
-
-    public void setLens(Lens lens) {
-        this.lens = lens;
     }
 
     public void insertSDCard(SDCard sdCard) {
